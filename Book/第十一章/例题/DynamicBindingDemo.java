@@ -8,23 +8,23 @@ public class DynamicBindingDemo {
 		m(new Person());
 		m(new Object());
 	}
-	
+
 	public static void m(Object x) {
 		System.out.println(x.toString());
 	}
 }
 
-class GraduateStudent extends Student{
+class GraduateStudent extends Student {
 }
 
-class Student extends Person{
+class Student extends Person {
 	@Override
 	public String toString() {
 		return "Student";
 	}
 }
 
-class Person extends Object{
+class Person extends Object {
 	@Override
 	public String toString() {
 		return "Person";
